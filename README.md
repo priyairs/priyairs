@@ -3,11 +3,11 @@
 
 - 🌱 I’m currently learning **Data Science**
 
-- 👨‍💻 All of my projects are available at [https://github.com/priyairs](https://github.com/priyairs)
+- 👨‍💻 All of my projects are available at [github](https://github.com/priyairs)
 
 - 📫 How to reach me **priyairsan@gmail.com**
 
-- 📄 Know about my experiences [https://docs.google.com/document/d/1hLlQtqPtRy1JIUOPqJ0d6Np0smZgt_UIW6-SyQ2jM-Y/edit?usp=sharing](https://docs.google.com/document/d/1hLlQtqPtRy1JIUOPqJ0d6Np0smZgt_UIW6-SyQ2jM-Y/edit?usp=sharing)
+- 📄 Know about my experiences [resume](https://docs.google.com/document/d/1hLlQtqPtRy1JIUOPqJ0d6Np0smZgt_UIW6-SyQ2jM-Y/edit?usp=sharing)
 
 - ⚡ Fun fact **I find joy in turning messy datasets into meaningful stories—because behind every number, there's a hidden insight waiting to be uncovered.**
 
