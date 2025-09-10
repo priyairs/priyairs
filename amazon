@@ -1,0 +1,135 @@
+git clone 
+cd 
+Step 2: Import into Eclipse
+Open Eclipse.
+Go to File → Import… → Maven → Existing Maven Projects.
+Select the folder .
+Finish → Project will appear in Package Explorer.
+
+Step 3: Build inside Eclipse
+Right-click the project → Run As → Maven clean
+Again right-click → Run As → Maven install
+This will compile + run tests + create a .jar or .war in target/ folder.
+
+Step 4: Try Common Fixes (like in your exam paper)
+Open pom.xml
+Practice:
+Adding compiler plugin
+Changing JUnit version
+Adding Servlet API dependency
+Changing <packaging> from jar to war
+Then build again: Right-click your project →
+Run As → Maven clean
+Run As → Maven install
+
+Step 5 → Run the app.
+Just right-click the main class (one with public static void main) → Run As → Java Application.
+Step 5 → Run on Tomcat.
+Add Tomcat in Eclipse (Window → Preferences → Server → Runtime → Add).
+Right-click project → Run As → Run on Server.
+Open browser: http://localhost:8080/AppName.
+
+Step 6: Push Changes to GitHub
+Once you modify pom.xml or code:
+git add .
+git commit -m "Updated pom.xml with JUnit and Servlet API"
+git push origin main
+
+
+git clone 
+git init
+git remote add origin https://github.com/your-username/maven-git-lab.git
+git add .
+git commit -m "Initial Maven project setup"
+git push -u origin main
+Git
+- git init initialize
+- git remote set-url origin https://   add remote
+- git add .   git commit -m" "
+- git branch -M main  //create branch
+- git push -u origin main
+- git checkout -b feature-branch
+- git branch -a
+- git push -u origin feature-branch
+- git status (modify)
+- git diff
+- git log --all ->q-quit [History]
+- git checkout main to change to other branch
+- git branch -D feature-branch
+- git restore .
+- git diff > fix.patch create patch
+- git apply fix.patch apply patch
+- git clone
+- cd
+- git push origin feature-branch
+
+Docker Compose
+-> docker --version
+-> cd: path
+-> notepad docker-compose.yml
+-> docker compose up -d
+-> docker ps
+     logs
+     stop
+     restart start up --build -d
+
+
+version: "3.8"
+services:
+  app:
+    image: yourdockerhubusername/yourapp:1.0
+    container_name: campus_app
+    ports:
+      - "7070:8080"
+    depends_on:
+      - db
+
+  db:
+    image: mysql:8.0
+    container_name: campus_db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: campusdb
+      MYSQL_USER: campususer
+      MYSQL_PASSWORD: campuspass
+    ports:
+      - "3306:3306"
+version: "3.8"
+services:
+  app:
+    image: yourdockerhubusername/food-order:1.0
+    container_name: food_app
+    ports:
+      - "7075:8080"
+    depends_on:
+      - db
+
+  db:
+    image: postgres:14
+    container_name: food_db
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: fooddb
+    ports:
+      - "5432:5432"
+
+version: "3.8"
+
+services:
+  web:
+    image: nginx:latest
+    ports:
+      - "8080:80"
+
+  db:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: testdb
+      MYSQL_USER: testuser
+      MYSQL_PASSWORD: testpass
+    ports:
+      - "3306:3306"
