@@ -7,7 +7,7 @@
 
 - 📫 How to reach me **priyairsan@gmail.com**
 
-- 📄 Know about my experiences [resume](https://docs.google.com/document/d/1hLlQtqPtRy1JIUOPqJ0d6Np0smZgt_UIW6-SyQ2jM-Y/edit?usp=sharing)
+- 📄 Know about my experiences [resume](https://docs.google.com/document/d/1e7ii0wL7zCZNIGOzF0Ag95UekcUYLMxiFSZU0xVxuyM/edit?usp=sharing)
 
 - ⚡ Fun fact **I find joy in turning messy datasets into meaningful stories—because behind every number, there's a hidden insight waiting to be uncovered.**
 
